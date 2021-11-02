@@ -50,8 +50,6 @@
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  font-size: 22px;
-  transition: all 0.4s ease;
   font-size: 23px;
   text-align: center;
   cursor: pointer;
@@ -82,12 +80,12 @@
   list-style: none;
 }
 
-.sidebar.open .bx-search:hover {
+.sidebar > .open > .bx-search:hover {
   background: #1d1b31;
   color: #fff;
 }
 
-.sidebar .bx-search:hover {
+.sidebar > .bx-search:hover {
   background: #fff;
   color: #11101d;
 }
