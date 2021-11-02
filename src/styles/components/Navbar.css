@@ -80,16 +80,6 @@
   list-style: none;
 }
 
-.sidebar > .open > .bx-search:hover {
-  background: #1d1b31;
-  color: #fff;
-}
-
-.sidebar > .bx-search:hover {
-  background: #fff;
-  color: #11101d;
-}
-
 .sidebar li a {
   display: flex;
   height: 100%;
