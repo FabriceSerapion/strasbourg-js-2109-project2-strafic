@@ -21,11 +21,13 @@ function ParkingRelais() {
 
   useEffect(() => {
     axios(config)
+      // eslint-disable-next-line func-names
       .then(function (response) {
         setPark(response.data.ParkAndRide);
       })
+      // eslint-disable-next-line func-names
       .catch(function (error) {
-        console.log(error);
+        return error;
       });
   }, []);
 
