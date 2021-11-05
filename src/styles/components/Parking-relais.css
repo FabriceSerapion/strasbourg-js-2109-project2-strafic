@@ -1,0 +1,68 @@
+.parking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.parking-container > h3 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.presentation {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-image: url(../../assets/Parking.jpg);
+    background-size: cover;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.presentation h2 {
+    font-size: 6rem;
+    padding-top: 3%;
+}
+
+.presentation p {
+    font-size: 4rem;
+    color: rgb(255, 255, 5);
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+.parking-card-item {
+    height: 350px;
+    width: 250px;
+    padding: 15px;
+    border: solid black 1px;
+    text-align: center;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+.choice-park {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    margin-bottom: 5rem;
+}
+
+.choice-park-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-video{
+    height: 100px;
+    width: 100px;
+    background: url(../../assets/Parking-logo.png);
+    background-size: cover;
+    margin-bottom: 3rem;
+}
