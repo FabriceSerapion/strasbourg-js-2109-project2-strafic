@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [navOpen, setnavOpen] = useState('bx bx-menu');
@@ -32,40 +33,40 @@ function Navbar() {
         </div>
         <ul className="nav-list">
           <li>
-            <a href="/#">
+            <Link to="/">
               <i className="bx bx-grid-alt" />
               <span className="links_name">Dashboard</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#">
+            <Link to="/lignes-et-plans">
               <i className="bx bxs-map" />
               <span className="links_name">Lignes et plans</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#">
+            <Link to="/points-de-vente">
               <i className="bx bxs-store" />
-              <span className="links_name">Point de vente</span>
-            </a>
+              <span className="links_name">Points de vente</span>
+            </Link>
           </li>
           <li>
-            <a href="/#">
+            <Link to="/parkings-relais">
               <i className="bx bxs-parking" />
-              <span className="links_name">Parking relais</span>
-            </a>
+              <span className="links_name">Parkings relais</span>
+            </Link>
           </li>
           <li>
-            <a href="/#">
+            <Link to="/veloparc">
               <i className="bx bx-cycling" />
               <span className="links_name">Veloparc</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#">
+            <Link href="/velhop">
               <i className="bx bx-cart-alt" />
               <span className="links_name">Velhop</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
