@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import ParkCard from './PR-card';
+import ParkCard from '../components/Parking-relais-card';
+import Navbar from '../components/Navbar';
 
 function ParkingRelais() {
   const [park, setPark] = useState([]);
@@ -31,6 +32,7 @@ function ParkingRelais() {
 
   return (
     <div className="parking-container">
+      <Navbar />
       <div className="presentation">
         <h2>Parking Relais (P+R)</h2>
         <p>Simplifiez-vous la ville !</p>
