@@ -63,7 +63,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/velhop">
+            <Link to="/velhop">
               <i className="bx bx-cart-alt" />
               <span className="links_name">Velhop</span>
             </Link>
