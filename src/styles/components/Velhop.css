@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.velhop-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.velhop-presentation {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-image: url("../../assets/bikescopie.jpg");
+    background-size: cover;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.velhop-presentation h2 {
+    font-size: 6rem;
+    padding-top: 3%;
+}
+
+.velhop-presentation p {
+    font-size: 4rem;
+    color: rgb(255, 255, 5);
+    padding-top: 2rem;
+    font-weight: bold;
+
+}
+
+h3 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+#logostation {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.choice-station-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-station {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    margin-bottom: 2rem;
+    
+}
+
+.station-card-item {
+    height: auto;
+    width: 250px;
+    padding: 15px;
+    border: solid black 1px;
+    text-align: center;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+} 
