@@ -34,7 +34,7 @@ function Veloparc() {
       <div className="veloparcimage-video" />
       <div className="choice-park-container">
         <select onChange={changeValueSelect} className="choice-park">
-          <option>Selectionnez un parking...</option>
+          <option>Selectionnez un véloparc</option>
           {velopark &&
             velopark.map((parking) => {
               // console.log(parking);
