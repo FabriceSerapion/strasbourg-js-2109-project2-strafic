@@ -3,4 +3,6 @@
 @import "./components/Véloparc.css";
 @import "./components/Plan-et-lignes.css";
 @import 'boxicons';
+@import './components/Navbar.css';
 @import './components/Points-de-vente.css';
+@import './components/Velhop.css';

@@ -3,6 +3,7 @@ import axios from 'axios';
 import VeloparcCard from '../components/VeloparcCard';
 import Navbar from '../components/Navbar';
 
+
 function Veloparc() {
   const [velopark, setVeloPark] = useState([]);
   const [select, setSelect] = useState();
@@ -56,6 +57,7 @@ function Veloparc() {
                 );
               })}
         </div>
+        
       </div>
     </div>
   );

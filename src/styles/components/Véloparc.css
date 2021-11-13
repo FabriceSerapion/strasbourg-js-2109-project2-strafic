@@ -62,8 +62,9 @@
     font-weight: bold;
 }
 .parking-card-item {
-    height: 350px;
-    width: 250px;
+    font-size: 3rem;
+    height: auto;
+    width: 300px;
     padding: 15px;
     border: solid black 1px;
     text-align: center;
@@ -75,7 +76,7 @@
 .choice-park {
     width: 100%;
     height: 50px;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 5rem;
 }
 .choice-park-container {

@@ -18,12 +18,10 @@ function Velhop() {
   useEffect(() => {
     axios(config)
       .then(function (response) {
-        // let data = JSON.stringify(response);
-
         setVelhop(response.data.Velhop);
       })
       .catch(function (error) {
-        console.log(error);
+        return error;
       });
   }, []);
 
