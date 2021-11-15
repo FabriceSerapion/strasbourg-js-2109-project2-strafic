@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import VeloparcCard from '../components/VeloparcCard';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 
 function Veloparc() {
@@ -57,8 +58,8 @@ function Veloparc() {
                 );
               })}
         </div>
-        
       </div>
+      <Footer />
     </div>
   );
 }

@@ -39,6 +39,7 @@
     font-size: 3rem;
     color: #333;
     margin-bottom: 3rem;
+    padding-top: 3rem;
 }
 .plan-et-lignes-presentation {
     height: 100vh;
@@ -47,17 +48,16 @@
     background-image: url(../../assets/Planetlignes.jpg);
     background-size: cover;
     color: white;
-    margin-bottom: 3rem;
 }
 .plan-et-lignes-presentation h2 {
-    font-size: 6rem;
-    padding-top: 3%;
+    font-size: 5.35rem;
+    padding-top: 5%;
 }
 .plan-et-lignes-presentation p {
     font-size: 4rem;
     color: rgb(255, 255, 5);
-    padding-top: 1.25rem;
     font-weight: bold;
+    padding-top:210px;
 }
 .plan-et-lignes-item {
     height: auto;
@@ -90,30 +90,29 @@
     background-size: cover;
     margin-bottom: 3rem;
 }
-a {
+.lienpdf {
     color: black;
-    text-decoration: none;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin: 50px auto;
 }
-a:link {
+.lienpdf:link {
     color:black;
     text-decoration: none;
   }
   
   /* visited link */
-  a:visited {
+.lienpdf:visited {
     color: purple;
   }
   
   /* mouse over link */
-  a:hover {
+.lienpdf:hover {
     color: gold;
   }
   
   /* selected link */
-  a:active {
+.lienpdf:active {
     color: black;
     text-decoration: none;
 

@@ -41,7 +41,9 @@ function LignesetPlansCard(props) {
             fontSize: '1em',
           }}
         >
-          <a href={pdf}>Lien vers le plan</a>
+          <a className="lienpdf" href={pdf}>
+            Lien vers le plan
+          </a>
         </span>
       </p>
     </div>

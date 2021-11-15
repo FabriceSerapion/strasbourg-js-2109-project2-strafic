@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import Footer from '../components/Footer';
 import LignesetPlansCard from '../components/Lignes-et-plans-card';
 import Navbar from '../components/Navbar';
 
@@ -19,7 +20,6 @@ function LignesEtPlans() {
   };
   useEffect(() => {
     axios(config).then(function res(response) {
-      console.log(response);
       const modifiedResponse = response.data.LinesDelivery.AnnotatedLineRef;
       modifiedResponse[0].pdf =
         'https://media.cts-strasbourg.eu/fiches-horaires/lignes/HORAIRES%20Hiver%202021-22/Filezilla/Ligne10_web_rentree2021.pdf';
@@ -193,6 +193,7 @@ function LignesEtPlans() {
               })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
