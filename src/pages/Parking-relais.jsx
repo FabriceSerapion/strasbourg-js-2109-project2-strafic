@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ParkCard from '../components/Parking-relais-card';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function ParkingRelais() {
   const [park, setPark] = useState([]);
@@ -63,6 +64,7 @@ function ParkingRelais() {
               })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

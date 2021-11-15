@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import VeloparcCard from '../components/VeloparcCard';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
 
 function Veloparc() {
   const [velopark, setVeloPark] = useState([]);
@@ -34,10 +36,9 @@ function Veloparc() {
       <div className="veloparcimage-video" />
       <div className="choice-park-container">
         <select onChange={changeValueSelect} className="choice-park">
-          <option>Selectionnez un parking...</option>
+          <option>Selectionnez un véloparc</option>
           {velopark &&
             velopark.map((parking) => {
-              // console.log(parking);
               return <option>{parking.Designation}</option>;
             })}
         </select>
@@ -56,7 +57,9 @@ function Veloparc() {
                 );
               })}
         </div>
+        <SimpleMap/>
       </div>
+      <Footer />
     </div>
   );
 }
