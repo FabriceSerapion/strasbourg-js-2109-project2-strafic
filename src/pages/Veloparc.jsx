@@ -3,6 +3,7 @@ import axios from 'axios';
 import VeloparcCard from '../components/VeloparcCard';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SimpleMap from '../components/MapsVeloparc';
 
 
 function Veloparc() {

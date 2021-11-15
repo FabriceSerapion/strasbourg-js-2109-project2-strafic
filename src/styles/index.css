@@ -1,10 +1,10 @@
-@import "./components/Navbar.css";
 @import "./components/Parking-relais.css";
 @import "./components/Véloparc.css";
 @import "./components/Plan-et-lignes.css";
 @import 'boxicons';
 @import './components/Points-de-vente.css';
 @import './components/Velhop.css';
+@import './components/VeloparcMaps.css';
 
 body {
     margin: 0;
