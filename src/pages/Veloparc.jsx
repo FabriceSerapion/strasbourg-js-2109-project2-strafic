@@ -39,7 +39,6 @@ function Veloparc() {
           <option>Selectionnez un véloparc</option>
           {velopark &&
             velopark.map((parking) => {
-              // console.log(parking);
               return <option>{parking.Designation}</option>;
             })}
         </select>
@@ -58,6 +57,7 @@ function Veloparc() {
                 );
               })}
         </div>
+        <SimpleMap/>
       </div>
       <Footer />
     </div>

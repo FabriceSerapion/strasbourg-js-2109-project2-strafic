@@ -180,8 +180,6 @@ function LignesEtPlans() {
             })}
         </select>
         <div className="park-card">
-          {/* {velopark && <a href={velopark[37].pdf}>Lien plan</a>} */}
-
           {planetlignes &&
             planetlignes
               .filter((filterpetl) => {
