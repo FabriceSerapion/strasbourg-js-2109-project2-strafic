@@ -62,33 +62,6 @@ export default function InfosTrafic() {
             activeStep
           ].Content.Message[2].MessageText[0].Value
         );
-
-        const answerOne =
-          response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage;
-        console.log('1ère réponse : ', answerOne);
-        // mapper ici pour avoir la totalité des messages
-
-        // const answerTwo = answerOne[0].InfoMessage;
-        // console.log("2e réponse : ", answerTwo[0].Content.Message);
-
-        // const answerThree = answerTwo[0].Content.Message;
-        // console.log("3e réponse : ", answerThree[0].Content.Message[2].MessageText[0]);
-
-        console.log(
-          'chemin final : ',
-          response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage[0]
-            .Content.Message[2].MessageText[0].Value
-        );
-        console.log(
-          'chemin final : ',
-          response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage[1]
-            .Content.Message[2].MessageText[0]
-        );
-        console.log(
-          'chemin final : ',
-          response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage[2]
-            .Content.Message[2].MessageText[0]
-        );
       })
       .catch(function (error) {
         console.log(error);
