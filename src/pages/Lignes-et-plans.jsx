@@ -173,15 +173,12 @@ function LignesEtPlans() {
           <option>Selectionnez votre ligne</option>
           {planetlignes &&
             planetlignes.map((parking) => {
-              // console.log(parking);
               return (
                 <option>{`${parking.LineName} : ${parking.LineRef}`}</option>
               );
             })}
         </select>
         <div className="park-card">
-          {/* {velopark && <a href={velopark[37].pdf}>Lien plan</a>} */}
-
           {planetlignes &&
             planetlignes
               .filter((filterpetl) => {
