@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import VenteCard from '../components/VenteCard';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function PointsDeVente() {
   const [vente, setVente] = useState([]);
@@ -22,11 +23,10 @@ function PointsDeVente() {
 
   useEffect(() => {
     axios(config)
-      // eslint-disable-next-line func-names
       .then(function (response) {
         setVente(response.data.RetailOutlet);
       })
-      // eslint-disable-next-line func-names
+
       .catch(function (error) {
         return error;
       });
@@ -62,6 +62,7 @@ function PointsDeVente() {
               })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
