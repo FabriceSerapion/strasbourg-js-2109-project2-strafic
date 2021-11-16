@@ -11,8 +11,6 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import '../styles/components/Infos-trafic.css';
 
-const randomColor = require('randomcolor');
-
 export default function InfosTrafic() {
   const theme = useTheme();
   const [news, setNews] = useState([]);
@@ -70,7 +68,13 @@ export default function InfosTrafic() {
 
   return (
     <div className="global-container">
-      <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+      <Box
+        sx={{
+          maxWidth: 400,
+          flexGrow: 1,
+          boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px',
+        }}
+      >
         <MobileStepper
           variant="text"
           steps={maxSteps}
@@ -116,11 +120,8 @@ export default function InfosTrafic() {
               maxWidth: 400,
               width: '100%',
               p: 2,
-              bgcolor: randomColor({
-                count: 10,
-                hue: 'green',
-                luminosity: 'light',
-              }),
+              bgcolor: '#11101D',
+              color: 'white',
             }}
           >
             <Typography>{currentTitle}</Typography>
@@ -137,11 +138,8 @@ export default function InfosTrafic() {
               maxWidth: 400,
               width: '100%',
               p: 2,
-              bgcolor: randomColor({
-                count: 10,
-                hue: 'yellow',
-                luminosity: 'light',
-              }),
+              bgcolor: 'gold',
+              color: 'black',
             }}
           >
             {currentDate}
@@ -155,14 +153,13 @@ export default function InfosTrafic() {
               maxWidth: 400,
               width: '100%',
               p: 2,
-              bgcolor: randomColor({
-                count: 10,
-                hue: 'blue',
-                luminosity: 'light',
-              }),
+              bgcolor: '#11101D',
+              color: 'white',
             }}
           >
-            {currentNews}
+            {currentNews.includes('<br />')
+              ? currentNews.replaceAll('<br />', ' ')
+              : currentNews}
           </Box>
         ) : null}
       </Box>
