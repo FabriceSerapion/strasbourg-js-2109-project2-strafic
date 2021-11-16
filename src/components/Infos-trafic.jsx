@@ -16,9 +16,9 @@ const randomColor = require('randomcolor');
 export default function InfosTrafic() {
   const theme = useTheme();
   const [news, setNews] = useState([]);
-  const [activeStep, setActiveStep] = React.useState(0);
-  const [currentTitle, setCurrentTitle] = React.useState([]);
-  const [currentDate, setCurrentDate] = React.useState([]);
+  const [activeStep, setActiveStep] = useState(0);
+  const [currentTitle, setCurrentTitle] = useState([]);
+  const [currentDate, setCurrentDate] = useState([]);
   const [currentNews, setCurrentNews] = useState([]);
   const maxSteps = news.length;
 

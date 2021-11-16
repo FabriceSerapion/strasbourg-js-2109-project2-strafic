@@ -158,6 +158,19 @@ function LignesEtPlans() {
       setPlanEtLignes(modifiedResponse);
     });
   }, []);
+  const [checked, setChecked] = useState(false);
+  const [checked2, setChecked2] = useState(false);
+
+  function handleChange() {
+    setChecked(!checked);
+  }
+
+  function handleChange2() {
+    setChecked2(!checked2);
+  }
+
+  const togglecheck1 = checked ? '' : 'hidden-check1';
+  const togglecheck2 = checked2 ? '' : 'hidden-check2';
 
   return (
     <div className="plan-et-lignes-container">
@@ -167,28 +180,77 @@ function LignesEtPlans() {
         <p>Un bon plan, votre ligne, tout est ici !</p>
       </div>
       <h3>Trouvez votre plan ou ligne en un click.</h3>
+      <div>
+        <p>Trouvez votre ligne</p>
+        <input
+          type="checkbox"
+          id="chk1"
+          className="chk11"
+          checked={checked}
+          onChange={handleChange}
+        />
+        <p>Consultez les plans du réseau CTS</p>
+        <input
+          type="checkbox"
+          id="chk2"
+          className="chk22"
+          checked={checked2}
+          onChange={handleChange2}
+        />
+      </div>
       <div className="plan-et-lignesimage-video" />
-      <div className="choice-plan-et-lignes-container">
-        <select onChange={changeValueSelect} className="choice-park">
-          <option>Selectionnez votre ligne</option>
-          {planetlignes &&
-            planetlignes.map((parking) => {
-              return (
-                <option>{`${parking.LineName} : ${parking.LineRef}`}</option>
-              );
-            })}
-        </select>
-        <div className="park-card">
-          {planetlignes &&
-            planetlignes
-              .filter((filterpetl) => {
-                const copyselect = select.split(' : ');
-                return filterpetl.LineName === copyselect[0];
-              })
-              .map((mappetl) => {
-                return <LignesetPlansCard {...mappetl} />;
+      <div className={togglecheck1}>
+        <div className="choice-plan-et-lignes-container">
+          <select onChange={changeValueSelect} className="choice-park">
+            <option>Selectionnez votre ligne</option>
+            {planetlignes &&
+              planetlignes.map((parking) => {
+                return (
+                  <option>{`${parking.LineName} : ${parking.LineRef}`}</option>
+                );
               })}
+          </select>
+          <div className="park-card">
+            {planetlignes &&
+              planetlignes
+                .filter((filterpetl) => {
+                  const copyselect = select.split(' : ');
+                  return filterpetl.LineName === copyselect[0];
+                })
+                .map((mappetl) => {
+                  return <LignesetPlansCard {...mappetl} />;
+                })}
+          </div>
         </div>
+      </div>
+      <div
+        className={togglecheck2}
+        style={{ display: 'flex', flexDirection: 'column' }}
+      >
+        <a
+          href="https://www.cts-strasbourg.eu/export/sites/default/pdf/CTS_plan_detaille_20800e_01-2021_V10.pdf"
+          style={{ color: 'red' }}
+        >
+          Plan détaillé du réseau urbain
+        </a>
+        <a
+          href="https://www.cts-strasbourg.eu/export/sites/default/pdf/CTS_schematique_jour_01-2021_V08.pdf"
+          style={{ color: 'red' }}
+        >
+          Plan schématique du réseau urbain
+        </a>
+        <a
+          href="https://www.cts-strasbourg.eu/export/sites/default/pdf/CTS_plan_detaille_20800e_01-2021_V10.pdf"
+          style={{ color: 'red' }}
+        >
+          Plan schématique du réseau de soirée
+        </a>
+        <a
+          href="https://www.cts-strasbourg.eu/export/sites/default/Parameters/CTS_Armature_cartonnette_2020_V03.pdf"
+          style={{ color: 'red' }}
+        >
+          Plan schématique du réseau Tram, format de poche
+        </a>
       </div>
       <Footer />
     </div>
