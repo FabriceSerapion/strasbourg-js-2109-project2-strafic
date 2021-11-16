@@ -50,14 +50,14 @@
     color: white;
 }
 .plan-et-lignes-presentation h2 {
-    font-size: 5.35rem;
-    padding-top: 5%;
+    font-size: 6rem;
+    padding-top: 3%;
 }
 .plan-et-lignes-presentation p {
     font-size: 4rem;
     color: rgb(255, 255, 5);
+    padding-top: 2rem;
     font-weight: bold;
-    padding-top:210px;
 }
 .plan-et-lignes-item {
     height: auto;

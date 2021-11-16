@@ -1,0 +1,7 @@
+.hidden-check1 {  
+    display: none;
+  }
+  
+  .hidden-check2 {
+    display: none !important;
+  }
