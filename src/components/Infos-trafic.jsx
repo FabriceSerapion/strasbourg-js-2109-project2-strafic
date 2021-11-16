@@ -4,7 +4,6 @@ import axios from 'axios';
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
 import MobileStepper from '@mui/material/MobileStepper';
-// import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
@@ -16,9 +15,9 @@ const randomColor = require('randomcolor');
 export default function InfosTrafic() {
   const theme = useTheme();
   const [news, setNews] = useState([]);
-  const [activeStep, setActiveStep] = React.useState(0);
-  const [currentTitle, setCurrentTitle] = React.useState([]);
-  const [currentDate, setCurrentDate] = React.useState([]);
+  const [activeStep, setActiveStep] = useState(0);
+  const [currentTitle, setCurrentTitle] = useState([]);
+  const [currentDate, setCurrentDate] = useState([]);
   const [currentNews, setCurrentNews] = useState([]);
   const maxSteps = news.length;
 
@@ -28,6 +27,11 @@ export default function InfosTrafic() {
 
   const handleBack = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+
+  const striptags = (str) => {
+    if (str === null || str === '') return false;
+    return str.toString().replace(/(<([^>]+)>)/gi, '');
   };
 
   const config = {
@@ -61,33 +65,6 @@ export default function InfosTrafic() {
           response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage[
             activeStep
           ].Content.Message[2].MessageText[0].Value
-        );
-
-        const answerOne =
-          response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage;
-        console.log('1ère réponse : ', answerOne);
-        // mapper ici pour avoir la totalité des messages
-
-        // const answerTwo = answerOne[0].InfoMessage;
-        // console.log("2e réponse : ", answerTwo[0].Content.Message);
-
-        // const answerThree = answerTwo[0].Content.Message;
-        // console.log("3e réponse : ", answerThree[0].Content.Message[2].MessageText[0]);
-
-        console.log(
-          'chemin final : ',
-          response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage[0]
-            .Content.Message[2].MessageText[0].Value
-        );
-        console.log(
-          'chemin final : ',
-          response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage[1]
-            .Content.Message[2].MessageText[0]
-        );
-        console.log(
-          'chemin final : ',
-          response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage[2]
-            .Content.Message[2].MessageText[0]
         );
       })
       .catch(function (error) {
@@ -150,7 +127,7 @@ export default function InfosTrafic() {
               }),
             }}
           >
-            <Typography>{currentTitle}</Typography>
+            <Typography>{striptags(currentTitle)}</Typography>
           </Box>
         ) : null}
 
@@ -171,7 +148,7 @@ export default function InfosTrafic() {
               }),
             }}
           >
-            {currentDate}
+            {striptags(currentDate)}
           </Box>
         ) : null}
 
@@ -189,7 +166,7 @@ export default function InfosTrafic() {
               }),
             }}
           >
-            {currentNews}
+            {striptags(currentNews)}
           </Box>
         ) : null}
       </Box>
