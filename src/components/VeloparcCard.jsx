@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 function VeloparcCard(props) {
   const { Designation, AccessInformation } = props;
   return (
-    <div
-      className="parking-card-item"
-      style={{ fontSize: '1.5em', fontWeight: 'bold', margin: '30px auto' }}
-    >
-      <h3>Veloparc localisé à l&apos;arrét: {Designation}</h3>
-      <p style={{ fontSize: '0.7em', margin: '30px auto' }}>
+    <div className="veloparc-card-item">
+      <h3 style={{ fontSize: '0.75em' }}>
+        Veloparc localisé à l&apos;arrét:{' '}
+        <span style={{ color: 'gold' }}>{Designation}</span>
+      </h3>
+      <p style={{ fontSize: '0.4em', margin: '0px auto' }}>
         {AccessInformation}
       </p>
     </div>

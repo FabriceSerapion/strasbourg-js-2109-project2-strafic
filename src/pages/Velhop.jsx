@@ -3,6 +3,7 @@ import axios from 'axios';
 import StationCard from '../components/Velhop-card';
 import Navbar from '../components/Navbar';
 import logostation from '../assets/logostation.svg';
+import Footer from '../components/Footer';
 
 function Velhop() {
   const [velhop, setVelhop] = useState([]);
@@ -18,12 +19,10 @@ function Velhop() {
   useEffect(() => {
     axios(config)
       .then(function (response) {
-        // let data = JSON.stringify(response);
-
         setVelhop(response.data.Velhop);
       })
       .catch(function (error) {
-        console.log(error);
+        return error;
       });
   }, []);
 
@@ -70,6 +69,7 @@ function Velhop() {
               })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

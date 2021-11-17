@@ -1,0 +1,37 @@
+.itineraire-container{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    width: 100vw;
+    height: 100vh;
+    background: url(../../assets/logo.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.itineraire-container h2{
+    margin: 50px auto;
+}
+
+.choice-line {
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: 5rem;
+}
+
+.presentation-itineraire {
+    width: 50%;
+    height: 30vh;
+    background: url(../../assets/presentation-cts.png) center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
