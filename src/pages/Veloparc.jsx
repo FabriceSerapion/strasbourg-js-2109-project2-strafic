@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import VeloparcCard from '../components/VeloparcCard';
+import VeloparcCard from '../components/Veloparc-card';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import SimpleMap from '../components/MapsVeloparc';
+import SimpleMap from '../components/Maps-veloparc';
 
 
 function Veloparc() {
@@ -27,14 +27,14 @@ function Veloparc() {
   }, []);
 
   return (
-    <div className="parking-container">
+    <div className="veloparc-container">
       <Navbar />
-      <div className="veloparcpresentation">
+      <div className="veloparc-presentation">
         <h2>VéloParc (V+P)</h2>
         <p>Strasbourg ville des vélos volés.</p>
       </div>
       <h3>Trouvez votre véloparc en un click.</h3>
-      <div className="veloparcimage-video" />
+      <div className="veloparc-image-video" />
       <div className="choice-park-container">
         <select onChange={changeValueSelect} className="choice-park">
           <option>Selectionnez un véloparc</option>

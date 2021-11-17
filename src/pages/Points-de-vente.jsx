@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import VenteCard from '../components/VenteCard';
+import VenteCard from '../components/Vente-card';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 

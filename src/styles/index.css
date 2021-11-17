@@ -6,6 +6,7 @@
 @import './components/Velhop.css';
 @import './components/Itineraire.css';
 @import './components/VeloparcMaps.css';
+@import './components/Navbar.css';
 
 body {
     margin: 0;

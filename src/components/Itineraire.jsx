@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import InfosTrafic from './Infos-trafic';
 
 function Itineraire() {
   const [allLine, setAllLine] = useState([]);
@@ -32,6 +33,7 @@ function Itineraire() {
   return (
     <div className="itineraire-container">
       <div className="logo" />
+      <InfosTrafic />
       <div className="presentation-itineraire" />
       <h2>
         Simplifiez-vous la vie en découvrant les horaires de passages des Bus et
@@ -72,7 +74,8 @@ function Itineraire() {
                 } ${infos.ExpectedArrivalTime.substring(11, 19)}`;
               });
               return (
-                <div>
+                <div className="parking-card-item">
+                  <h2>Lieus et horaires de passages</h2>
                   {infoList.map((information) => (
                     <p>{information}</p>
                   ))}

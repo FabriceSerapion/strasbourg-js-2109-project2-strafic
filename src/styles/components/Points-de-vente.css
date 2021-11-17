@@ -13,7 +13,7 @@
 
 .presentation-vente {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     background-image: url(../../assets/images-vente.png);
     background-size: cover;
@@ -35,9 +35,9 @@
 
 .vente-card-item {
     height: auto;
-    width: 250px;
+    width: 300px;
     padding: 15px;
-    border: solid black 1px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     text-align: center;
     margin-bottom: 5rem;
     display: flex;
@@ -65,4 +65,22 @@
     background: url(../../assets/Points-de-vente-Logo.png);
     background-size: cover;
     margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 425px){
+    .presentation-vente {
+        display: none;
+    }
+
+    .vente-container > h3 {
+    font-size: 2rem;
+    color: #333;
+    margin: 2rem auto;
+    max-width: 70%;
+    }
+    .choice-vente {
+        max-width: 80%;
+        font-size: 20px;
+        margin-bottom: 5rem;
+    }
 }
