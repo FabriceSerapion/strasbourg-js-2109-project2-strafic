@@ -128,3 +128,12 @@
   font-size: 0.9rem;
   color: rgb(255, 255, 5);
 }
+
+@media screen and (max-width: 1050px){
+  .sidebar {
+    opacity: 0.3;
+  }
+  .sidebar.open {
+    opacity: 1;
+  }
+}
