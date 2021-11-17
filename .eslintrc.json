@@ -18,5 +18,5 @@
     "react/jsx-props-no-spreading": "off",
     "react/react-in-jsx-scope": "off"
   },
-  "ignorePatterns": ["Maps-veloparc.jsx","Veloparc.jsx"] 
+  "ignorePatterns": ["MapsVeloparc.jsx", "Veloparc.jsx", "MapsVelhop.jsx", "Velhop.jsx"]
 }
