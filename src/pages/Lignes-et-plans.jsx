@@ -180,7 +180,7 @@ function LignesEtPlans() {
         <p>Un bon plan, votre ligne, tout est ici !</p>
       </div>
       <h3>Trouvez votre plan ou ligne en un click.</h3>
-      <div>
+      <div className="style-checkbox">
         <p>Trouvez votre ligne</p>
         <input
           type="checkbox"
@@ -189,7 +189,7 @@ function LignesEtPlans() {
           checked={checked}
           onChange={handleChange}
         />
-        <p>Consultez les plans du réseau CTS</p>
+        <div className="plan-et-lignesimage-video" />
         <input
           type="checkbox"
           id="chk2"
@@ -197,8 +197,9 @@ function LignesEtPlans() {
           checked={checked2}
           onChange={handleChange2}
         />
+        <p>Consultez les plans du réseau CTS</p>
       </div>
-      <div className="plan-et-lignesimage-video" />
+
       <div className={togglecheck1}>
         <div className="choice-plan-et-lignes-container">
           <select onChange={changeValueSelect} className="choice-park">
@@ -224,31 +225,20 @@ function LignesEtPlans() {
         </div>
       </div>
       <div
+        id="card-lien"
         className={togglecheck2}
         style={{ display: 'flex', flexDirection: 'column' }}
       >
-        <a
-          href="https://www.cts-strasbourg.eu/export/sites/default/pdf/CTS_plan_detaille_20800e_01-2021_V10.pdf"
-          style={{ color: 'red' }}
-        >
+        <a href="https://www.cts-strasbourg.eu/export/sites/default/pdf/CTS_plan_detaille_20800e_01-2021_V10.pdf">
           Plan détaillé du réseau urbain
         </a>
-        <a
-          href="https://www.cts-strasbourg.eu/export/sites/default/pdf/CTS_schematique_jour_01-2021_V08.pdf"
-          style={{ color: 'red' }}
-        >
+        <a href="https://www.cts-strasbourg.eu/export/sites/default/pdf/CTS_schematique_jour_01-2021_V08.pdf">
           Plan schématique du réseau urbain
         </a>
-        <a
-          href="https://www.cts-strasbourg.eu/export/sites/default/pdf/CTS_plan_detaille_20800e_01-2021_V10.pdf"
-          style={{ color: 'red' }}
-        >
+        <a href="https://www.cts-strasbourg.eu/export/sites/default/pdf/CTS_plan_detaille_20800e_01-2021_V10.pdf">
           Plan schématique du réseau de soirée
         </a>
-        <a
-          href="https://www.cts-strasbourg.eu/export/sites/default/Parameters/CTS_Armature_cartonnette_2020_V03.pdf"
-          style={{ color: 'red' }}
-        >
+        <a href="https://www.cts-strasbourg.eu/export/sites/default/Parameters/CTS_Armature_cartonnette_2020_V03.pdf">
           Plan schématique du réseau Tram, format de poche
         </a>
       </div>

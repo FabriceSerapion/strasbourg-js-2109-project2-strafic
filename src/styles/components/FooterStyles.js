@@ -26,7 +26,7 @@ export const Column = styled.div`
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  margin-left: -50px;
+  margin-left: -20px;
 `;
 
 export const Row = styled.div`

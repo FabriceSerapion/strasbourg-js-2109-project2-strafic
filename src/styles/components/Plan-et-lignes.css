@@ -33,6 +33,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: #f2f3f4;
 }
 .plan-et-lignes-container > h3 {
     font-size: 3rem;
@@ -81,19 +82,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 .plan-et-lignesimage-video{
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
     background: url(../../assets/planetlignelogo.png);
     background-size: cover;
     margin-bottom: 3rem;
+    
 }
 .lienpdf {
     color: black;
     font-weight: bold;
     font-size: 1.25em;
     margin: 50px auto;
+    
 }
 .lienpdf:link {
     color:black;
@@ -116,4 +120,31 @@
     text-decoration: none;
 
   }
+  #card-lien {
+    height: auto;
+    width: auto;
+    padding: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    text-align: center;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    
+
+  }
+
+  #card-lien a {
+    text-decoration: none;
+    margin-top: 5px;
+    font-size: 1.15rem;
+    font-weight: bold;
+  }  
+  #card-lien a:link{
+    color:black;
+}
+  #card-lien a:hover{
+  color:red;
+  }
+  
   
