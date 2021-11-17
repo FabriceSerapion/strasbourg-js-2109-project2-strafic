@@ -35,10 +35,10 @@
 
 }
 
-h3 {
-    font-size: 3rem;
+.velhop-container h3 {
+    font-size: 2rem;
     color: #333;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 #logostation {
@@ -63,7 +63,7 @@ h3 {
 
 .station-card-item {
     height: auto;
-    width: 350px;
+    width: 300px;
     padding: 15px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     text-align: center;
@@ -71,4 +71,23 @@ h3 {
     display: flex;
     flex-direction: column;
     color: #333;
-} 
+}
+
+@media screen and (max-width: 425px){
+    .velhop-presentation {
+        display: none;
+    }
+
+    .velhop-container h3 {
+        font-size: 2rem;
+        color: #333;
+        margin: 2rem auto;
+        max-width: 70%;
+    }
+    
+    .choice-station {
+        max-width: 80%;
+        font-size: 20px;
+        margin-bottom: 5rem;
+    }
+}

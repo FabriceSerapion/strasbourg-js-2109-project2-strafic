@@ -74,7 +74,7 @@ export default function InfosTrafic() {
     <div className="global-container">
       <Box
         sx={{
-          maxWidth: 400,
+          maxWidth: 300,
           flexGrow: 1,
           boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px',
         }}

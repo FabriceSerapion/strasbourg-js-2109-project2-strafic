@@ -4,13 +4,8 @@ export const Box = styled.div`
   padding: 20px 10px;
   background: #11101d;
   margin-top: 20px;
-
   bottom: 0;
   width: 100%;
-
-  @media (max-width: 1000px) {
-    padding: 18px 20px;
-  }
 `;
 
 export const Container = styled.div`
@@ -25,8 +20,7 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  text-align: left;
-  margin-left: -20px;
+  text-align: center;
 `;
 
 export const Row = styled.div`

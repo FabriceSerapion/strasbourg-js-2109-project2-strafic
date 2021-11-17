@@ -1,17 +1,19 @@
 .hide {
   display: none;
 }
+
 .myDIV{
   padding: 6px 6px 6px 6px;
 }
+
 .myDIV:hover + .hide {
   display: inline-flex;
   width:70px;
 }
+
 .zoom {
     transition: transform .5s;
-    
-  }
+}
   
   .zoom:hover {
     -ms-transform: scale(2); /* IE 9 */
@@ -19,6 +21,7 @@
     transform: scale(2); 
     z-index:10 ;
   }
+
   .maps-veloparc{
     display: flex;
     justify-content: center;
@@ -35,17 +38,12 @@
     border-radius : 30px;
     margin:auto;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    
-    
 }
+
 #text {
     font-size: 20px;
     text-align: center;
+    line-height: 90px;
     font-style: italic;
     color:#11101D;
 }
- 
-#test {
-    line-height:50px;
-    margin: 20px;
-} 
