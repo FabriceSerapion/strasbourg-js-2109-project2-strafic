@@ -4,7 +4,6 @@ import axios from 'axios';
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
 import MobileStepper from '@mui/material/MobileStepper';
-// import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
@@ -26,6 +25,11 @@ export default function InfosTrafic() {
 
   const handleBack = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+
+  const striptags = (str) => {
+    if (str === null || str === '') return false;
+    return str.toString().replace(/(<([^>]+)>)/gi, '');
   };
 
   const config = {
@@ -124,7 +128,7 @@ export default function InfosTrafic() {
               color: 'white',
             }}
           >
-            <Typography>{currentTitle}</Typography>
+            <Typography>{striptags(currentTitle)}</Typography>
           </Box>
         ) : null}
 
@@ -142,7 +146,7 @@ export default function InfosTrafic() {
               color: 'black',
             }}
           >
-            {currentDate}
+            {striptags(currentDate)}
           </Box>
         ) : null}
 
@@ -157,9 +161,7 @@ export default function InfosTrafic() {
               color: 'white',
             }}
           >
-            {currentNews.includes('<br />')
-              ? currentNews.replaceAll('<br />', ' ')
-              : currentNews}
+            {striptags(currentNews)}
           </Box>
         ) : null}
       </Box>

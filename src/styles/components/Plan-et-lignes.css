@@ -33,6 +33,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: #f2f3f4;
 }
 
 .plan-et-lignes-container > h3 {
@@ -52,8 +53,8 @@
 }
 
 .plan-et-lignes-presentation h2 {
-  font-size: 5.35rem;
-  padding-top: 5%;
+  font-size: 6rem;
+  padding-top: 3%;
 }
 
 .plan-et-lignes-presentation p {
@@ -125,22 +126,47 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 425px){
-    .plan-et-lignes-presentation {
-        display: none;
-    }
+@media screen and (max-width: 425px) {
+  .plan-et-lignes-presentation {
+    display: none;
+  }
 
-    .plan-et-lignes-container > h3 {
-        font-size: 2rem;
-        color: #333;
-        margin: 2rem auto;
-        max-width: 70%;
-        padding-top: 0;
-    }
-    
-    .choice-plan-et-lignes {
-        max-width: 80%;
-        font-size: 20px;
-        margin-bottom: 5rem;
-    }
+  .plan-et-lignes-container > h3 {
+    font-size: 2rem;
+    color: #333;
+    margin: 2rem auto;
+    max-width: 70%;
+    padding-top: 0;
+  }
+
+  .choice-plan-et-lignes {
+    max-width: 80%;
+    font-size: 20px;
+    margin-bottom: 5rem;
+  }
+}
+
+#card-lien {
+  height: auto;
+  width: auto;
+  padding: 15px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  text-align: center;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+#card-lien a {
+  text-decoration: none;
+  margin-top: 5px;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+#card-lien a:link {
+  color: black;
+}
+#card-lien a:hover {
+  color: red;
 }
