@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
 .notfound {
   width: 100vw;
   height: 100vh;
@@ -7,7 +8,6 @@
   justify-content: center;
   align-content: center;
   background-color: #fef1e1;
-  text-align: center;
   position: relative;
   text-align: center;
    color: #111346;
@@ -19,7 +19,6 @@
   width: 50%;
   height: 100%;
 }
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
 
 .centertext {
   position: absolute;
@@ -53,7 +52,6 @@ animation-iteration-count: 4;
   }
   
 }
-
 
 @keyframes glitch {
   2%,
