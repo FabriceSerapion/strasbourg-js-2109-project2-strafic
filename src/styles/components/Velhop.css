@@ -73,7 +73,7 @@
     color: #333;
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 650px){
     .velhop-presentation {
         display: none;
     }

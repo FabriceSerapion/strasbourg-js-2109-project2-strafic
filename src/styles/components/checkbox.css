@@ -2,23 +2,26 @@
   --form-control-color: rebeccapurple;
   --form-control-disabled: #959495;
 }
-.hidden-check1 {  
-    display: none;
-  }
-  
-  .hidden-check2 {
-    display: none !important;
-  }
-  .style-checkbox {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items:center;
-    padding-left: 90px;
-  }
-  input[type="checkbox"] {
-    margin-bottom: 40px;
-    -webkit-appearance: none;
+
+.hidden-check1 {
+  display: none;
+}
+
+.hidden-check2 {
+  display: none !important;
+}
+
+.style-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
+
+input[type='checkbox'] {
+  margin-bottom: 40px;
+  -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
   font: inherit;
@@ -30,31 +33,40 @@
   transform: translateY(-0.075em);
   display: grid;
   place-content: center;
-  }
-  input[type="checkbox"]::before {
-    content: "";
-    width: 0.70em;
-    height: 0.70em;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--form-control-color);
-  }
+}
+
+input[type='checkbox']::before {
+  content: '';
+  width: 0.7em;
+  height: 0.7em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type='checkbox']:checked::before {
+  transform: scale(1);
+}
+
+input[type='checkbox']:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+.style-checkbox p {
+  margin-bottom: 42px;
+  margin-right: 5px;
+}
+
+#chk2 {
+  margin-right: 5px;
+  margin-left: 30px;
+}
+
+#chk1 {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 650px) {
   
-  input[type="checkbox"]:checked::before {
-    transform: scale(1);
-  }
-  input[type="checkbox"]:focus {
-    outline: max(2px, 0.15em) solid currentColor;
-    outline-offset: max(2px, 0.15em);
-  }
-  .style-checkbox p {
-    margin-bottom: 42px;
-    margin-right: 5px;
-  }
-  #chk2{
-    margin-right: 5px;
-    margin-left: 30px;
-  }
-  #chk1{
-    margin-right: 30px;
-  }
+}

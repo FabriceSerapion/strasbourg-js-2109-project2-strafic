@@ -68,7 +68,7 @@
     margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 650px){
     .presentation-vente {
         display: none;
     }

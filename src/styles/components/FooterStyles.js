@@ -13,7 +13,6 @@ export const Container = styled.div`
   flex-direction: column;
   max-width: 1000px;
   margin: 0 auto;
-  /* background: red; */
 `;
 
 export const Column = styled.div`

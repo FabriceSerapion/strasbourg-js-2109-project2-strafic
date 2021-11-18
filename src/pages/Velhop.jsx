@@ -3,7 +3,7 @@ import axios from 'axios';
 import StationCard from '../components/Velhop-card';
 import Navbar from '../components/Navbar';
 import logostation from '../assets/logostation.svg';
-import SimpleMap from '../components/MapsVelhop';
+import SimpleMap from '../components/Maps-veloparc';
 import Footer from '../components/Footer';
 
 function Velhop() {
