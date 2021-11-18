@@ -54,7 +54,7 @@ class SimpleMap extends Component {
           className="contenu"
           style={{
             width: '80vw',
-            height: '90vh',
+            height: '95vh',
             margin: 'auto',
             boxShadow: '2px 2px 2px 1px rgba(0, 0, 0, 0.2)',
           }}
@@ -63,7 +63,7 @@ class SimpleMap extends Component {
             <div
               className="maps-veloparc-style"
               style={{
-                height: '80vh',
+                height: '85vh',
                 width: '80vw',
                 alignSelf: 'center',
                 borderRadius: '30px 30px 0px 0px',
@@ -200,7 +200,7 @@ class SimpleMap extends Component {
               </GoogleMapReact>
             </div>
               <p id="text">
-                Votre veloparc à la carte.
+                Selon votre choix trouvez le véloparc grâce à la carte !
               </p>
           </div>
         </div>

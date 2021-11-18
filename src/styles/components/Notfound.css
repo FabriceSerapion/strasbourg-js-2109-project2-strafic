@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+.notfound {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background-color: #fef1e1;
+  position: relative;
+  text-align: center;
+   color: #111346;
+   font-size: 90px;
+   font-family: 'Fira Mono', monospace;
+   letter-spacing: -7px;
+}
+.background {
+  width: 50%;
+  height: 100%;
+}
+
+.centertext {
+  position: absolute;
+  top: 3%;
+  left: 28%;
+}
+.textglitch {
+  animation: glitch 1.75s linear infinite;
+  position: absolute;
+  animation-delay: 12s;
+  top: 90%;
+  left: 40%;
+  font-size: 1.4em;
+}
+.movingbus {
+  position: absolute;
+  filter: blur(1px) hue-rotate(-19deg) drop-shadow(19px 420px 6px #020202);
+  top: 76%;
+  right: 80%;
+  height: 55%;
+  width: 55%;
+animation: move 3s linear infinite;
+animation-iteration-count: 4;
+
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes move {
+  100% {
+    transform: translateX(150vw) translateY(-50%);
+  }
+  
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+.textglitch:before,
+.textglitch:after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.textglitch:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+.textglitch:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+}

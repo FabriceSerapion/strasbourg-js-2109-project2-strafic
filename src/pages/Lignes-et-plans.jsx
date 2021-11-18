@@ -202,8 +202,8 @@ function LignesEtPlans() {
 
       <div className={togglecheck1}>
         <div className="choice-plan-et-lignes-container">
-          <select onChange={changeValueSelect} className="choice-park">
-            <option>Selectionnez votre ligne</option>
+          <select onChange={changeValueSelect} className="choice-planetligne">
+            <option>Sélectionnez votre ligne...</option>
             {planetlignes &&
               planetlignes.map((parking) => {
                 return (

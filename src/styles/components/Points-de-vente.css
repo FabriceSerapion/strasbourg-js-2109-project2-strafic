@@ -47,7 +47,7 @@
 }
 
 .choice-vente {
-    width: 100%;
+    width: 50%;
     height: 50px;
     font-size: 30px;
     margin-bottom: 5rem;
@@ -81,6 +81,7 @@
     }
     .choice-vente {
         max-width: 80%;
+        width: 60%;
         font-size: 20px;
         margin-bottom: 5rem;
     }

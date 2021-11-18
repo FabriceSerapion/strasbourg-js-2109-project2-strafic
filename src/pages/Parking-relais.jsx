@@ -42,7 +42,7 @@ function ParkingRelais() {
       <div className="image-video" />
       <div className="choice-park-container">
         <select onChange={changeValueSelect} className="choice-park">
-          <option>Selectionnez un parking...</option>
+          <option>Sélectionnez un parking...</option>
           {park &&
             park.map((parking) => {
               return <option>{parking.Designation}</option>;
