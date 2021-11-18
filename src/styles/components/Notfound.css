@@ -6,11 +6,14 @@
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  /* background-color: #D0EBFC; */
   background-color: #fef1e1;
   text-align: center;
   position: relative;
   text-align: center;
+   color: #111346;
+   font-size: 90px;
+   font-family: 'Fira Mono', monospace;
+   letter-spacing: -7px;
 }
 .background {
   width: 50%;
@@ -18,13 +21,6 @@
 }
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
 
-body {
-  /* color: #B4CCEA; */
-  color: #111346;
-  font-size: 90px;
-  font-family: 'Fira Mono', monospace;
-  letter-spacing: -7px;
-}
 .centertext {
   position: absolute;
   top: 3%;
@@ -41,9 +37,6 @@ body {
 .movingbus {
   position: absolute;
   filter: blur(1px) hue-rotate(-19deg) drop-shadow(19px 420px 6px #020202);
-  /* filter:drop-shadow(0 0 0.75rem whitesmoke); */
-  /* filter: drop-shadow(80px 110px 6px black); */
-  
   top: 76%;
   right: 80%;
   height: 55%;
@@ -60,9 +53,6 @@ animation-iteration-count: 4;
   }
   
 }
-
-
-
 
 
 @keyframes glitch {
