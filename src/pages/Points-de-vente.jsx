@@ -43,7 +43,7 @@ function PointsDeVente() {
       <div className="image-vente" />
       <div className="choice-vente-container">
         <select onChange={changeValueSelect} className="choice-vente">
-          <option>Selectionnez un point de vente...</option>
+          <option>Sélectionnez un point de vente...</option>
           {vente &&
             vente.map((point) => {
               return <option>{point.Designation}</option>;

@@ -35,9 +35,9 @@ function Veloparc() {
       </div>
       <h3>Trouvez votre véloparc en un click.</h3>
       <div className="veloparc-image-video" />
-      <div className="choice-park-container">
-        <select onChange={changeValueSelect} className="choice-park">
-          <option>Selectionnez un véloparc</option>
+      <div className="choice-velopark-container">
+        <select onChange={changeValueSelect} className="choice-velopark">
+          <option>Sélectionnez un véloparc...</option>
           {velopark &&
             velopark.map((parking) => {
               return <option>{parking.Designation}</option>;

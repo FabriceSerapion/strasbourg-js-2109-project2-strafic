@@ -55,8 +55,8 @@ class SimpleMap extends Component {
         <div
           className="contenu"
           style={{
-            width: "55vw",
-            height: "90vh",
+            width: "80vw",
+            height: "95vh",
             margin: "auto",
             boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)",
           }}
@@ -65,8 +65,8 @@ class SimpleMap extends Component {
             <div
               className="maps-velhop-style"
               style={{
-                height: "80vh",
-                width: "55vw",
+                height: "85vh",
+                width: "80vw",
                 alignSelf: "center",
                 borderRadius: "30px 30px 0px 0px",
                 overflow: "hidden",
@@ -139,7 +139,9 @@ class SimpleMap extends Component {
                 <Marker lat={48.582023} lng={7.766771} text="Station automatique" adresse="107 Université" />
               </GoogleMapReact>
             </div>
-            <div id="test">
+            <div id="test" style={{
+                marginTop:'-5px',
+              }}>
               <p id="text" >
                 Trouvez rapidement la station que vous souhaitez grâce à la carte !
               </p>
