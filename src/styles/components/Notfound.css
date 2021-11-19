@@ -28,27 +28,27 @@
 .textglitch {
   animation: glitch 1.75s linear infinite;
   position: absolute;
-  animation-delay: 12s;
+  animation-delay: 7s;
   top: 90%;
   left: 40%;
   font-size: 1.4em;
 }
 .movingbus {
   position: absolute;
-  filter: blur(1px) hue-rotate(-19deg) drop-shadow(19px 420px 6px #020202);
+  filter: blur(1px) hue-rotate(-19deg) drop-shadow(60px 400px 50px #020202);
   top: 76%;
   right: 80%;
   height: 55%;
   width: 55%;
-animation: move 3s linear infinite;
-animation-iteration-count: 4;
+animation: move 2.80s linear infinite;
+animation-iteration-count: 3;
 
   transform: translateX(-50%) translateY(-50%);
 }
 
 @keyframes move {
   100% {
-    transform: translateX(150vw) translateY(-50%);
+    transform: translateX(150vw) translateY(-50%) rotate(-10deg);
   }
   
 }

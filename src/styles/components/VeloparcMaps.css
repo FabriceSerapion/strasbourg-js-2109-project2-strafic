@@ -4,22 +4,29 @@
 
 .myDIV{
   padding: 6px 6px 6px 6px;
+  text-align: center;
 }
 
 .myDIV:hover + .hide {
   display: inline-flex;
-  width:70px;
+  width:90px;
+  text-align: center;
 }
 
 .zoom {
     transition: transform .5s;
+    text-align: center;
 }
   
   .zoom:hover {
-    -ms-transform: scale(2); /* IE 9 */
-    -webkit-transform: scale(2); /* Safari 3-8 */
+    -ms-transform: scale(2); 
+    -webkit-transform: scale(2); 
     transform: scale(2); 
     z-index:10 ;
+    background: black;
+    color: whitesmoke;
+    text-align: center;
+    
   }
 
   .maps-veloparc{
