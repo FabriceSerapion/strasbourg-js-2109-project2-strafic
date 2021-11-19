@@ -36,7 +36,7 @@
 }
 
 .velhop-container h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #333;
     margin-bottom: 1rem;
 }
@@ -54,10 +54,10 @@
 }
 
 .choice-station {
-    width: 100%;
+    width: 47%;
     height: 50px;
     font-size: 30px;
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
     
 }
 
@@ -87,6 +87,7 @@
     
     .choice-station {
         max-width: 80%;
+        width: 75%;
         font-size: 20px;
         margin-bottom: 5rem;
     }

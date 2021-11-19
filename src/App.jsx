@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import LignesEtPlans from './pages/Lignes-et-plans';
+import Notfound from './pages/Notfound';
 import ParkingRelais from './pages/Parking-relais';
 import PointsDeVente from './pages/Points-de-vente';
 import Velhop from './pages/Velhop';
@@ -21,6 +22,7 @@ function App() {
         <Route path="/velhop" exact component={Velhop} />
         <Route path="/connexion" exact component={Connexion} />
         <Route path="/inscription" exact component={Inscription} />
+        <Route component={Notfound} />
       </Switch>
     </Router>
   );

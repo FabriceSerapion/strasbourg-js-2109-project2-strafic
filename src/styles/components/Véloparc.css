@@ -1,11 +1,4 @@
-.maps-veloparc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-  flex-direction: column;
-  padding-bottom: 20px;
-}
+
 
 .contenu {
   width: 70%;
@@ -78,14 +71,14 @@
   color: #333;
 }
 
-.choice-park {
-  width: 100%;
+.choice-velopark {
+  width: 47%;
   height: 50px;
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 5rem;
 }
 
-.choice-park-container {
+.choice-velopark-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,8 +105,9 @@
     max-width: 70%;
   }
 
-  .choice-station {
+  .choice-velopark {
     max-width: 80%;
+    width: 65%;
     font-size: 20px;
     margin-bottom: 5rem;
   }
