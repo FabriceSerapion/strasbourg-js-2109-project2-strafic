@@ -68,6 +68,18 @@ function Navbar() {
               <span className="links_name">Velhop</span>
             </Link>
           </li>
+          <li>
+            <Link to="/connexion">
+              <i className="bx bxs-user-circle" />
+              <span className="links_name">Connexion</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/inscription">
+              <i className="bx bxs-id-card" />
+              <span className="links_name">Inscription</span>
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
