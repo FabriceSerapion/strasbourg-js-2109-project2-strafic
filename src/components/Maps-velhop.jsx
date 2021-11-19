@@ -8,21 +8,20 @@ const Marker = ({ text, adresse }) => (
     style={{
       display:"flex",
       justifyContent: "column",
+      textAlign: 'center',
     }}
   >
     <div className="zoom"
       style={{
-        fontSize:"0.60rem",
-        color: "white",
-        background: "black",
-        padding: "7px 7px",
-        display: "inline-flex",
-        justifyContent: "center",
-        borderRadius: "20%",
-        flexDirection:"column",
-        textAlign: "center",
+        fontSize: '0.70rem',
+        padding: '6px 6px',
+        display: 'inline-flex',
+        justifyContent: 'center',
+        borderRadius: '20%',
+        flexDirection: 'column',
+        textAlign: 'center',
         boxShadow:
-          "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px",
+          'rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px',
       }}
     > 
       <div className="myDIV">
@@ -32,6 +31,7 @@ const Marker = ({ text, adresse }) => (
         style={{
           color: "gold",
           marginTop:"5px",
+          textAlign: 'center',
         }}
       >
         {adresse}
@@ -46,7 +46,7 @@ class SimpleMap extends Component {
       lat: 48.5734053,
       lng: 7.7521113,
     },
-    zoom: 12.5,
+    zoom: 12.65,
   };
 
   render() {
@@ -94,12 +94,6 @@ class SimpleMap extends Component {
                 <Marker lat={48.568644} lng={7.795621} text="Station automatique" adresse="124 Auberge de jeunesse" />
                 <Marker lat={48.529616} lng={7.734226} text="Station automatique" adresse="111 Campus d'Illkirch" />
                 <Marker lat={48.578462} lng={7.749776} text="Boutique et Station automatique" adresse="101 Centre" />
-                <Marker
-                  lat={48.578462}
-                  lng={7.749776}
-                  text="Station automatique"
-                  adresse="102 Centre 2"
-                />
                 <Marker
                   lat={48.612597}
                   lng={7.71163}
