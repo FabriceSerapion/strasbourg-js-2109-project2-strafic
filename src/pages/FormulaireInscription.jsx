@@ -1,34 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/components/FormulaireInscription.css';
+import axios from 'axios';
 
 export default function Inscription() {
-  let firstName;
-  let lastName;
-  let email;
-  let password;
+  const [userFirstname, setUserFirstname] = useState('');
+  const [userLastname, setUserLastname] = useState('');
+  const [userEmail, setUserEmail] = useState('');
+  const [userPassword, setUserPassword] = useState('');
+
   function handleChangeFirstName(e) {
-    firstName = e.target.value;
-    console.log(firstName);
+    setUserFirstname(e.target.value);
   }
   function handleChangeLastName(e) {
-    lastName = e.target.value;
-    console.log(lastName);
+    setUserLastname(e.target.value);
   }
   function handleChangeEmail(e) {
-    email = e.target.value;
-    console.log(email);
+    setUserEmail(e.target.value);
   }
-  function handleChangePasswword(e) {
-    password = e.target.value;
-    console.log(password);
+  function handleChangePassword(e) {
+    setUserPassword(e.target.value);
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (userFirstname && userLastname && userEmail && userPassword) {
+      const userInfos = {
+        firstname: userFirstname,
+        lastname: userLastname,
+        email: userEmail,
+        password: userPassword,
+      };
+      axios
+        .post('http://localhost:3005/inscription', userInfos)
+        .then((response) => {
+          console.log(
+            "Les données de l'utilisateur ont été transmis au back-end avec succès."
+          );
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
   }
   return (
     <div className="inscription-global-container">
       <div className="img-container" />
       <div className="formulaire-inscription">
         <h2>Inscription</h2>
-        <form metod="post">
+        <form>
           <div className="input-div">
             <label htmlFor="firstname">
               Prénom
@@ -69,12 +90,12 @@ export default function Inscription() {
                 type="password"
                 id="password"
                 autoComplete="off"
-                onChange={handleChangePasswword}
+                onChange={handleChangePassword}
               />
             </label>
           </div>
           <div className="buttons-inscription">
-            <button type="submit" id="connexion-login">
+            <button type="submit" id="connexion-login" onClick={handleSubmit}>
               Enregistrer
             </button>
           </div>
