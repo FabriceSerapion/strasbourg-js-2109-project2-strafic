@@ -48,7 +48,7 @@
 }
 
 .choice-park {
-    width: 105%;
+    width: 45%;
     height: 50px;
     font-size: 30px;
     margin-bottom: 5rem;
@@ -81,6 +81,7 @@
 }
     .choice-park {
         max-width: 80%;
+        width: 75%;
         font-size: 20px;
         margin-bottom: 5rem;
     }

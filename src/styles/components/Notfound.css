@@ -49,7 +49,7 @@ animation-iteration-count: 3;
 
 @keyframes move {
   100% {
-    transform: translateX(150vw) translateY(-50%);
+    transform: translateX(150vw) translateY(-50%) rotate(-10deg);
   }
   
 }
