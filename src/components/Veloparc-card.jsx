@@ -6,7 +6,7 @@ function VeloparcCard(props) {
   return (
     <div className="veloparc-card-item">
       <h3 style={{ fontSize: '0.75em' }}>
-        Veloparc localisé à l&apos;arrét:{' '}
+        Véloparc localisé à l&apos;arrêt :{' '}
         <span style={{ color: 'gold' }}>{Designation}</span>
       </h3>
       <p style={{ fontSize: '0.4em', margin: '0px auto' }}>

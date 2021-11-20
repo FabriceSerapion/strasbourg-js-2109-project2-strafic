@@ -14,7 +14,6 @@ const Connexion = () => {
     const newEntry = { email, password };
 
     setAllEntry([...allEntry, newEntry]);
-    console.log(allEntry);
   };
 
   function handleClick(e) {
@@ -22,7 +21,7 @@ const Connexion = () => {
     if (email && password) {
       alert('Vous êtes connecté');
     } else {
-      alert('Veuillez renseignez tous les champs');
+      alert('Veuillez renseigner tous les champs');
     }
   }
   return (

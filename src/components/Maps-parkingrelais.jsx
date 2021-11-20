@@ -144,7 +144,7 @@ class SimpleMap extends Component {
               </GoogleMapReact>
             </div>
               <p id="text">
-                Selon votre choix trouvez le véloparc grâce à la carte !
+                Trouvez rapidement le parking-relais que vous souhaitez grâce à la carte !
               </p>
           </div>
         </div>

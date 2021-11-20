@@ -38,7 +38,7 @@ function Velhop() {
         <h2>Stations Vélhop</h2>
         <p>Et Hop ! Un Vélhopla Geiss !</p>
       </div>
-      <h3>Trouver votre Vélhop en un clic !</h3>
+      <h3>Trouvez votre Vélhop en un clic !</h3>
       <img
         src={logostation}
         alt="logo"

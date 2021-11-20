@@ -39,7 +39,7 @@ function PointsDeVente() {
         <h2>Points de Vente</h2>
         <p>Votre point de vente près de chez vous</p>
       </div>
-      <h3>Trouvez votre point de vente en un click.</h3>
+      <h3>Trouvez votre point de vente en un clic !</h3>
       <div className="image-vente" />
       <div className="choice-vente-container">
         <select onChange={changeValueSelect} className="choice-vente">
