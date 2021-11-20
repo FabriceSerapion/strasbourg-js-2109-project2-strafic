@@ -8,21 +8,20 @@ const Marker = ({ text, adresse }) => (
     style={{
       display:"flex",
       justifyContent: "column",
+      textAlign: 'center',
     }}
   >
     <div className="zoom"
       style={{
-        fontSize:"0.60rem",
-        color: "white",
-        background: "black",
-        padding: "7px 7px",
-        display: "inline-flex",
-        justifyContent: "center",
-        borderRadius: "20%",
-        flexDirection:"column",
-        textAlign: "center",
+        fontSize: '0.70rem',
+        padding: '6px 6px',
+        display: 'inline-flex',
+        justifyContent: 'center',
+        borderRadius: '20%',
+        flexDirection: 'column',
+        textAlign: 'center',
         boxShadow:
-          "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px",
+          'rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px',
       }}
     > 
       <div className="myDIV">
@@ -32,6 +31,7 @@ const Marker = ({ text, adresse }) => (
         style={{
           color: "gold",
           marginTop:"5px",
+          textAlign: 'center',
         }}
       >
         {adresse}
@@ -46,7 +46,7 @@ class SimpleMap extends Component {
       lat: 48.5734053,
       lng: 7.7521113,
     },
-    zoom: 12.5,
+    zoom: 12.65,
   };
 
   render() {
@@ -55,8 +55,8 @@ class SimpleMap extends Component {
         <div
           className="contenu"
           style={{
-            width: "55vw",
-            height: "90vh",
+            width: "80vw",
+            height: "95vh",
             margin: "auto",
             boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)",
           }}
@@ -65,8 +65,8 @@ class SimpleMap extends Component {
             <div
               className="maps-velhop-style"
               style={{
-                height: "80vh",
-                width: "55vw",
+                height: "85vh",
+                width: "80vw",
                 alignSelf: "center",
                 borderRadius: "30px 30px 0px 0px",
                 overflow: "hidden",
@@ -94,12 +94,6 @@ class SimpleMap extends Component {
                 <Marker lat={48.568644} lng={7.795621} text="Station automatique" adresse="124 Auberge de jeunesse" />
                 <Marker lat={48.529616} lng={7.734226} text="Station automatique" adresse="111 Campus d'Illkirch" />
                 <Marker lat={48.578462} lng={7.749776} text="Boutique et Station automatique" adresse="101 Centre" />
-                <Marker
-                  lat={48.578462}
-                  lng={7.749776}
-                  text="Station automatique"
-                  adresse="102 Centre 2"
-                />
                 <Marker
                   lat={48.612597}
                   lng={7.71163}
@@ -139,7 +133,9 @@ class SimpleMap extends Component {
                 <Marker lat={48.582023} lng={7.766771} text="Station automatique" adresse="107 Université" />
               </GoogleMapReact>
             </div>
-            <div id="test">
+            <div id="test" style={{
+                marginTop:'-5px',
+              }}>
               <p id="text" >
                 Trouvez rapidement la station que vous souhaitez grâce à la carte !
               </p>

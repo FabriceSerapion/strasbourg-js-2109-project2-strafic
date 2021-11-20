@@ -74,12 +74,13 @@ export default function InfosTrafic() {
     <div className="global-container">
       <Box
         sx={{
-          maxWidth: 300,
+          maxWidth: 700,
           flexGrow: 1,
           boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px',
         }}
       >
         <MobileStepper
+          className="mobileStepper"
           variant="text"
           steps={maxSteps}
           position="static"
@@ -116,12 +117,13 @@ export default function InfosTrafic() {
 
         {currentTitle ? (
           <Box
+            className="currentTitle"
             sx={{
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               height: 'auto',
-              maxWidth: 400,
+              maxWidth: 700,
               width: '100%',
               p: 2,
               bgcolor: '#11101D',
@@ -134,12 +136,13 @@ export default function InfosTrafic() {
 
         {currentDate ? (
           <Box
+            className="currentDate"
             sx={{
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               height: 'auto',
-              maxWidth: 400,
+              maxWidth: 700,
               width: '100%',
               p: 2,
               bgcolor: 'gold',
@@ -152,9 +155,10 @@ export default function InfosTrafic() {
 
         {currentNews ? (
           <Box
+            className="currentNews"
             sx={{
               height: 'auto',
-              maxWidth: 400,
+              maxWidth: 700,
               width: '100%',
               p: 2,
               bgcolor: '#11101D',

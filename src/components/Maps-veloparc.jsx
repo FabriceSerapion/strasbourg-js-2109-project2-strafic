@@ -11,9 +11,7 @@ const Marker = ({ text, adresse }) => (
     <div
       className="zoom"
       style={{
-        fontSize: '0.60rem',
-        color: 'white',
-        background: 'black',
+        fontSize: '0.88rem',
         padding: '10px 10px',
         display: 'inline-flex',
         justifyContent: 'center',
@@ -41,10 +39,10 @@ const Marker = ({ text, adresse }) => (
 class SimpleMap extends Component {
   static defaultProps = {
     center: {
-      lat: 48.5734053,
-      lng: 7.7521113,
+      lat: 48.582394,
+      lng: 7.747086,
     },
-    zoom: 12.5,
+    zoom: 12.3,
   };
 
   render() {
@@ -54,7 +52,7 @@ class SimpleMap extends Component {
           className="contenu"
           style={{
             width: '80vw',
-            height: '90vh',
+            height: '95vh',
             margin: 'auto',
             boxShadow: '2px 2px 2px 1px rgba(0, 0, 0, 0.2)',
           }}
@@ -63,7 +61,7 @@ class SimpleMap extends Component {
             <div
               className="maps-veloparc-style"
               style={{
-                height: '80vh',
+                height: '85vh',
                 width: '80vw',
                 alignSelf: 'center',
                 borderRadius: '30px 30px 0px 0px',
@@ -99,7 +97,7 @@ class SimpleMap extends Component {
                   lat={48.628589}
                   lng={7.758078}
                   text="Hoenheim Gare"
-                  adresse="Rue Simon Veil/Hoenheim Tram"
+                  adresse="Rue Simon Veil / Hoenheim Tram"
                 />
                 <Marker
                   lat={48.566872}
@@ -200,7 +198,7 @@ class SimpleMap extends Component {
               </GoogleMapReact>
             </div>
               <p id="text">
-                Votre veloparc à la carte.
+                Selon votre choix trouvez le véloparc grâce à la carte !
               </p>
           </div>
         </div>

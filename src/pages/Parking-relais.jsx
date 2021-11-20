@@ -3,6 +3,7 @@ import axios from 'axios';
 import ParkCard from '../components/Parking-relais-card';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SimpleMap from '../components/Maps-parkingrelais';
 
 function ParkingRelais() {
   const [park, setPark] = useState([]);
@@ -42,7 +43,7 @@ function ParkingRelais() {
       <div className="image-video" />
       <div className="choice-park-container">
         <select onChange={changeValueSelect} className="choice-park">
-          <option>Selectionnez un parking...</option>
+          <option>Sélectionnez un parking...</option>
           {park &&
             park.map((parking) => {
               return <option>{parking.Designation}</option>;
@@ -63,6 +64,7 @@ function ParkingRelais() {
                 );
               })}
         </div>
+        <SimpleMap />
       </div>
       <Footer />
     </div>

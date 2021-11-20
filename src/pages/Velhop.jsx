@@ -3,7 +3,7 @@ import axios from 'axios';
 import StationCard from '../components/Velhop-card';
 import Navbar from '../components/Navbar';
 import logostation from '../assets/logostation.svg';
-import SimpleMap from '../components/MapsVelhop';
+import SimpleMap from '../components/Maps-velhop';
 import Footer from '../components/Footer';
 
 function Velhop() {
@@ -48,7 +48,7 @@ function Velhop() {
       />
       <div className="choice-station-container">
         <select className="choice-station" onChange={HandleChange}>
-          <option>Sélectionner une station</option>
+          <option>Sélectionnez une station...</option>
           {velhop &&
             velhop.map((station) => {
               return <option>{station.Designation}</option>;
