@@ -91,7 +91,7 @@ export default function InfosTrafic() {
               onClick={handleNext}
               disabled={activeStep === maxSteps - 1}
             >
-              Next
+              Suivant
               {theme.direction === 'rtl' ? (
                 <KeyboardArrowLeft />
               ) : (
@@ -110,7 +110,7 @@ export default function InfosTrafic() {
               ) : (
                 <KeyboardArrowLeft />
               )}
-              Back
+              Précédent
             </Button>
           }
         />

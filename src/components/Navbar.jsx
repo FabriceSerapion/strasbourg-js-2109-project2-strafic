@@ -35,7 +35,7 @@ function Navbar() {
           <li>
             <Link to="/">
               <i className="bx bx-grid-alt" />
-              <span className="links_name">Dashboard</span>
+              <span className="links_name">Accueil</span>
             </Link>
           </li>
           <li>
@@ -53,19 +53,19 @@ function Navbar() {
           <li>
             <Link to="/parkings-relais">
               <i className="bx bxs-parking" />
-              <span className="links_name">Parkings relais</span>
+              <span className="links_name">Parkings-relais</span>
             </Link>
           </li>
           <li>
             <Link to="/veloparc">
               <i className="bx bx-cycling" />
-              <span className="links_name">Veloparc</span>
+              <span className="links_name">Véloparc</span>
             </Link>
           </li>
           <li>
             <Link to="/velhop">
               <i className="bx bx-cart-alt" />
-              <span className="links_name">Velhop</span>
+              <span className="links_name">Stations vélhop</span>
             </Link>
           </li>
           <li>
