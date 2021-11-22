@@ -28,6 +28,16 @@ app.post('/inscription', (request, response) => {
   );
 });
 
+app.get('/connexion', (request, response) => {
+  connection.query(
+    `SELECT * FROM strafic_users;`,
+    (error, result) => {
+      if (error) response.status(200).send('Error connexion');
+      else response.status(200).send(result);
+    }
+  );
+});
+
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
