@@ -39,7 +39,7 @@ function ParkingRelais() {
         <h2>Parking Relais (P+R)</h2>
         <p>Simplifiez-vous la ville !</p>
       </div>
-      <h3 className="title">Trouvez votre parking-relais en un click.</h3>
+      <h3 className="title">Trouvez votre parking-relais en un clic !</h3>
       <div className="image-video" />
       <div className="choice-park-container">
         <select onChange={changeValueSelect} className="choice-park">

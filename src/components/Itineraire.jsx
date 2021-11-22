@@ -36,12 +36,12 @@ function Itineraire() {
       <InfosTrafic />
       <div className="presentation-itineraire" />
       <h2>
-        Simplifiez-vous la vie en découvrant les horaires de passages des Bus et
+        Simplifiez-vous la vie en découvrant les horaires de passage des Bus et
         Tram dans l&apos;agglomération strasbourgeoise.
       </h2>
       <div className="itineraire">
         <select onChange={changeValueSelect} className="choice-line">
-          <option>Veuillez selectionner une destination</option>
+          <option>Veuillez sélectionner une destination</option>
           {allLine &&
             allLine.map((line) => {
               return (
@@ -75,7 +75,7 @@ function Itineraire() {
               });
               return (
                 <div className="parking-card-item">
-                  <h2>Lieus et horaires de passages</h2>
+                  <h2>Lieux et horaires de passage</h2>
                   {infoList.map((information) => (
                     <p>{information}</p>
                   ))}

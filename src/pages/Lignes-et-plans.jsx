@@ -179,7 +179,7 @@ function LignesEtPlans() {
         <h2>Plans et Lignes du réseau</h2>
         <p>Un bon plan, votre ligne, tout est ici !</p>
       </div>
-      <h3>Trouvez votre plan ou ligne en un click.</h3>
+      <h3>Trouvez votre plan ou ligne en un clic.</h3>
       <div className="style-checkbox">
         <p>Trouvez votre ligne</p>
         <input

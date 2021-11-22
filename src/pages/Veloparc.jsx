@@ -31,9 +31,9 @@ function Veloparc() {
       <Navbar />
       <div className="veloparc-presentation">
         <h2>VéloParc (V+P)</h2>
-        <p>Strasbourg ville des vélos volés.</p>
+        <p>Laissez votre vélo en toute sérénité.</p>
       </div>
-      <h3>Trouvez votre véloparc en un click.</h3>
+      <h3>Trouvez votre véloparc en un clic !</h3>
       <div className="veloparc-image-video" />
       <div className="choice-velopark-container">
         <select onChange={changeValueSelect} className="choice-velopark">

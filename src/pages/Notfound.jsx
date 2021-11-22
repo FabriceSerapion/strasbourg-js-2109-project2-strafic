@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/components/Notfound.css';
-// import background from '../assets/notfound.jpg';
 import background2 from '../assets/notfound2.jpg';
 import bus from '../assets/macaroni-bus.png';
 

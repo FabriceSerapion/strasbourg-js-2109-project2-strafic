@@ -137,7 +137,7 @@ class SimpleMap extends Component {
                 marginTop:'-5px',
               }}>
               <p id="text" >
-                Trouvez rapidement la station que vous souhaitez grâce à la carte !
+                Trouvez rapidement la station Vélhop que vous souhaitez grâce à la carte !
               </p>
             </div>
           </div>
