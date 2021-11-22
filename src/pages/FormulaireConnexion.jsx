@@ -1,28 +1,31 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/components/FormulaireConnexion.css';
+import axios from 'axios';
 
 const Connexion = () => {
-  const [email, setEmail] = useState('');
+  const [identifiant, setIdentifiant] = useState('');
   const [password, setPassword] = useState('');
 
-  const [allEntry, setAllEntry] = useState([]);
+  function handleChangeIdentifiant(e) {
+    setIdentifiant(e.target.value);
+  }
+  function handleChangePassword(e) {
+    setPassword(e.target.value);
+  }
 
-  const submitForm = (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
-
-    const newEntry = { email, password };
-
-    setAllEntry([...allEntry, newEntry]);
-    console.log(allEntry);
-  };
-
-  function handleClick(e) {
-    e.preventDefault();
-    if (email && password) {
-      alert('Vous êtes connecté');
-    } else {
-      alert('Veuillez renseignez tous les champs');
+    if (identifiant && password) {
+      axios
+        .get('http://localhost:3005/connexion')
+        .then((response) => {
+          console.log("Données récupérées depuis l'API");
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(`Erreur lors de la récupération depuis l'API : ${error}`);
+        });
     }
   }
   return (
@@ -30,7 +33,7 @@ const Connexion = () => {
       <div className="img-container" />
       <div className="formulaire-connexion">
         <h2>Connexion</h2>
-        <form action="" onSubmit={submitForm}>
+        <form>
           <div className="input-div">
             <label htmlFor="email">
               Email
@@ -40,8 +43,7 @@ const Connexion = () => {
                 pattern=".+@globex\.com"
                 required
                 autoComplete="off"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={handleChangeIdentifiant}
               />
             </label>
           </div>
@@ -52,8 +54,8 @@ const Connexion = () => {
                 type="password"
                 id="password"
                 autoComplete="off"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                required
+                onChange={handleChangePassword}
               />
             </label>
           </div>
@@ -62,7 +64,7 @@ const Connexion = () => {
           <button type="submit" id="forgot-password">
             Mot de passe oublié ?
           </button>
-          <button type="submit" id="connexion-login" onClick={handleClick}>
+          <button type="submit" id="connexion-login" onClick={handleSubmit}>
             connexion
           </button>
           <button type="submit" id="retour">
