@@ -116,6 +116,28 @@
 #retour:hover {
     background-position: right;
 }
+
+.hidden-confirmation{
+    display: none;
+}
+
+#div-confirmation{
+    font-size: 20px;
+    background-color: #64B450;
+    height: 100px;
+    width: 250px;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    left: 73%;
+    padding: 20px;
+}
+
+#div-confirmation p {
+    display: flex;
+    text-align: center;
+}
+
 @media screen and (max-width: 1300px){
     .img-container {
         flex-shrink: 5;
