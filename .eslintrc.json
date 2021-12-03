@@ -17,5 +17,6 @@
     "linebreak-style": ["error", "unix"],
     "react/jsx-props-no-spreading": "off",
     "react/react-in-jsx-scope": "off"
-  }
+  },
+  "ignorePatterns": ["Maps-veloparc.jsx", "Veloparc.jsx", "Maps-velhop.jsx", "Velhop.jsx", "Maps-parkingrelais.jsx","Parking-relais.jsx"]
 }

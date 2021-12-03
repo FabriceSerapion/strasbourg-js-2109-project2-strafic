@@ -1,0 +1,88 @@
+.vente-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f2f3f4;
+}
+
+.vente-container > h3 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.presentation-vente {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-image: url(../../assets/images-vente.png);
+    background-size: cover;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.presentation-vente h2 {
+    font-size: 6rem;
+    padding-top: 3%;
+}
+
+.presentation-vente p {
+    font-size: 4rem;
+    color: rgb(255, 255, 5);
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+.vente-card-item {
+    height: auto;
+    width: 300px;
+    padding: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    text-align: center;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+.choice-vente {
+    width: 50%;
+    height: 50px;
+    font-size: 30px;
+    margin-bottom: 5rem;
+}
+
+.choice-vente-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-vente{
+    height: 100px;
+    width: 100px;
+    background: url(../../assets/Points-de-vente-Logo.png);
+    background-size: cover;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 650px){
+    .presentation-vente {
+        display: none;
+    }
+
+    .vente-container > h3 {
+    font-size: 2rem;
+    color: #333;
+    margin: 2rem auto;
+    max-width: 70%;
+    }
+    .choice-vente {
+        max-width: 80%;
+        width: 60%;
+        font-size: 20px;
+        margin-bottom: 5rem;
+    }
+}
