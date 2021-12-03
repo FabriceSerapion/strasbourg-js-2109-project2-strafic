@@ -23,11 +23,11 @@ function PointsDeVente() {
 
   useEffect(() => {
     axios(config)
-      .then(function (response) {
+      .then((response) => {
         setVente(response.data.RetailOutlet);
       })
 
-      .catch(function (error) {
+      .catch((error) => {
         return error;
       });
   }, []);

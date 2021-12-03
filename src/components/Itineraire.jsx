@@ -18,17 +18,12 @@ function Itineraire() {
     },
   };
   useEffect(() => {
-    axios(config)
-      .then(function (response) {
-        setAllLine(
-          response.data.ServiceDelivery.EstimatedTimetableDelivery[0]
-            .EstimatedJourneyVersionFrame
-        );
-        console.log(allLine);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    axios(config).then((response) => {
+      setAllLine(
+        response.data.ServiceDelivery.EstimatedTimetableDelivery[0]
+          .EstimatedJourneyVersionFrame
+      );
+    });
   }, []);
   return (
     <div className="itineraire-container">
