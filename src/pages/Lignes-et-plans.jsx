@@ -21,6 +21,7 @@ function LignesEtPlans() {
   useEffect(() => {
     axios(config).then(function res(response) {
       const modifiedResponse = response.data.LinesDelivery.AnnotatedLineRef;
+      console.log(modifiedResponse);
       modifiedResponse[0].pdf =
         'https://media.cts-strasbourg.eu/fiches-horaires/lignes/HORAIRES%20Hiver%202021-22/Filezilla/Ligne10_web_rentree2021.pdf';
       modifiedResponse[1].pdf =
@@ -140,20 +141,6 @@ function LignesEtPlans() {
       modifiedResponse[58].pdf =
         'https://media.cts-strasbourg.eu/fiches-horaires/lignes/HORAIRES%20Hiver%202021-22/Filezilla/Ligne1_web_rentree2021.pdf';
       modifiedResponse[59].pdf =
-        'https://media.cts-strasbourg.eu/fiches-horaires/lignes/HORAIRES%20Hiver%202021-22/Filezilla/Ligne1_web_rentree2021.pdf';
-      modifiedResponse[60].pdf =
-        'https://media.cts-strasbourg.eu/fiches-horaires/lignes/HORAIRES%20Hiver%202021-22/Filezilla/Ligne1_web_rentree2021.pdf';
-      modifiedResponse[61].pdf =
-        'https://media.cts-strasbourg.eu/fiches-horaires/lignes/HORAIRES%20Hiver%202021-22/Filezilla/Ligne1_web_rentree2021.pdf';
-      modifiedResponse[62].pdf =
-        'https://media.cts-strasbourg.eu/fiches-horaires/lignes/HORAIRES%20Hiver%202021-22/Filezilla/Ligne1_web_rentree2021.pdf';
-      modifiedResponse[63].pdf =
-        'https://media.cts-strasbourg.eu/fiches-horaires/lignes/HORAIRES%20Hiver%202021-22/Filezilla/Ligne1_web_rentree2021.pdf';
-      modifiedResponse[64].pdf =
-        'https://media.cts-strasbourg.eu/fiches-horaires/lignes/HORAIRES%20Hiver%202021-22/Filezilla/Ligne1_web_rentree2021.pdf';
-      modifiedResponse[65].pdf =
-        'https://media.cts-strasbourg.eu/fiches-horaires/lignes/HORAIRES%20Hiver%202021-22/Filezilla/Ligne1_web_rentree2021.pdf';
-      modifiedResponse[66].pdf =
         'https://media.cts-strasbourg.eu/fiches-horaires/lignes/HORAIRES%20Hiver%202021-22/Filezilla/Ligne1_web_rentree2021.pdf';
       setPlanEtLignes(modifiedResponse);
     });
