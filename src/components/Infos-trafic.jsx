@@ -41,33 +41,29 @@ export default function InfosTrafic() {
     },
   };
   useEffect(() => {
-    axios(config)
-      .then(function (response) {
-        setNews(
-          response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage
-        );
+    axios(config).then((response) => {
+      setNews(
+        response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage
+      );
 
-        setCurrentTitle(
-          response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage[
-            activeStep
-          ].Content.Message[0].MessageText[0].Value
-        );
+      setCurrentTitle(
+        response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage[
+          activeStep
+        ].Content.Message[0].MessageText[0].Value
+      );
 
-        setCurrentDate(
-          response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage[
-            activeStep
-          ].Content.Message[1].MessageText[0].Value
-        );
+      setCurrentDate(
+        response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage[
+          activeStep
+        ].Content.Message[1].MessageText[0].Value
+      );
 
-        setCurrentNews(
-          response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage[
-            activeStep
-          ].Content.Message[2].MessageText[0].Value
-        );
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+      setCurrentNews(
+        response.data.ServiceDelivery.GeneralMessageDelivery[0].InfoMessage[
+          activeStep
+        ].Content.Message[2].MessageText[0].Value
+      );
+    });
   }, [activeStep]);
 
   return (

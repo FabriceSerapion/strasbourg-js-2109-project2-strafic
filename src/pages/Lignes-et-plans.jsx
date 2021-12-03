@@ -21,7 +21,6 @@ function LignesEtPlans() {
   useEffect(() => {
     axios(config).then(function res(response) {
       const modifiedResponse = response.data.LinesDelivery.AnnotatedLineRef;
-      console.log(modifiedResponse);
       modifiedResponse[0].pdf =
         'https://media.cts-strasbourg.eu/fiches-horaires/lignes/HORAIRES%20Hiver%202021-22/Filezilla/Ligne10_web_rentree2021.pdf';
       modifiedResponse[1].pdf =
